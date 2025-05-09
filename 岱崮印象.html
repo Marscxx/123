@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="岱崮印象线上平台，展示沂蒙山区特色农业、自然风光和青年助农成果">
+  <title>岱崮印象·线上展示平台</title>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      margin: 0;
+      background-color: #f7f7f7;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #2d8659;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #e6f2ea;
+      padding: 1rem 0;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2d8659;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #d0e8d8;
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    section h2, section h3 {
+      color: #2d8659;
+      border-left: 4px solid #2d8659;
+      padding-left: 0.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      background-color: #fafafa;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .gallery-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 0.8rem;
+      transition: transform 0.3s;
+    }
+    .gallery-img:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      background-color: #e6f2ea;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      nav {
+        gap: 0.8rem;
+        padding: 0.8rem;
+      }
+      section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>岱崮印象 · 线上展示平台</h1>
+    <p>打造连接青年与乡村的新窗口</p>
+  </header>
+
+  <nav>
+    <a href="#scenery">崮上风光</a>
+    <a href="#products">农品直达</a>
+    <a href="#culture">文创专区</a>
+    <a href="#youth">青年视角</a>
+    <a href="#travel">旅游导览</a>
+  </nav>
+
+  <section id="scenery">
+    <h2>📷 崮上风光</h2>
+    <p>展示岱崮独特的自然地貌、村庄风貌、田园风光，让人"云游岱崮"。</p>
+    <div class="grid">
+      <div class="card">
+        <img src="岱崮印象/yinxiang1.png" alt="岱崮风光1" class="gallery-img">
+        <h3>岱崮地貌</h3>
+        <p>世界罕见的方山地貌景观</p>
+      </div>
+      <div class="card">
+        <img src="岱崮印象/yinxiang2.png" alt="岱崮风光2" class="gallery-img">
+        <h3>传统村落</h3>
+        <p>保存完好的沂蒙山区民居</p>
+      </div>
+      <div class="card">
+        <img src="岱崮印象/yinxiang3.png" alt="岱崮风光3" class="gallery-img">
+        <h3>梯田景观</h3>
+        <p>人与自然和谐共生的典范</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>🍯 农品直达</h2>
+    <p>整合本地特色小米、蜂蜜、桃子等产品，链接消费者与乡村资源。</p>
+    <div class="grid">
+      <div class="card">
+        <img src="岱崮印象/nongpin1.png" alt="农品1" class="gallery-img">
+        <h3>岱崮小米</h3>
+        <p>山地种植，天然无污染</p>
+      </div>
+      <div class="card">
+        <img src="岱崮印象/nongpin2.png" alt="农品2" class="gallery-img">
+        <h3>山野蜂蜜</h3>
+        <p>百花蜜源，自然成熟</p>
+      </div>
+      <div class="card">
+        <img src="岱崮印象/nongpin3.png" alt="农品3" class="gallery-img">
+        <h3>蒙阴蜜桃</h3>
+        <p>脆甜多汁，果香浓郁</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="culture">
+    <h2>🎨 文创专区</h2>
+    <p>学生设计原创文创品牌"蒙小桃"，用创意激活乡土文化。</p>
+    <div class="grid">
+      <div class="card">
+        <img src="岱崮印象/wenchuang1.png" alt="文创1" class="gallery-img">
+        <h3>蒙小桃公仔</h3>
+        <p>可爱桃形吉祥物</p>
+      </div>
+      <div class="card">
+        <img src="岱崮印象/wenchuang2.png" alt="文创2" class="gallery-img">
+        <h3>logo</h3>
+        <p>蜜桃少女</p>
+      </div>
+      <div class="card">
+        <img src="岱崮印象/wenchuang3.png" alt="文创3" class="gallery-img">
+        <h3>水杯文创</h3>
+        <p>捧崮桃香·饮夏清凉</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="youth">
+    <h2>📺 青年视角</h2>
+    <p>收录学生调研Vlog、宣传片、创意短视频，展现当代青年的助农故事。</p>
+    <div class="grid">
+      <div class="card">
+        <img src="岱崮印象/shipin1.png" alt="青年视角1" class="gallery-img">
+        <h3>蒙阴之行</h3>
+        <p>调研实录</p>
+      </div>
+      <div class="card">
+        <img src="岱崮印象/shipin2.png" alt="青年视角2" class="gallery-img">
+        <h3>助农直播纪实</h3>
+        <p>电商助农新尝试</p>
+      </div>
+      <div class="card">
+        <img src="岱崮印象/shipin3.png" alt="青年视角3" class="gallery-img">
+        <h3>非遗传承记录</h3>
+        <p>寻找消失的老手艺</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="travel">
+    <h2>🗺️ 旅游导览</h2>
+    <p>推荐最佳打卡路线、美食住宿指南与节庆活动，让游客轻松畅游岱崮。</p>
+    <div class="grid">
+      <div class="card">
+        <img src="岱崮印象/lvyou1.png" alt="旅游1" class="gallery-img">
+        <h3>经典一日游</h3>
+        <p>农家乐体验</p>
+      </div>
+      <div class="card">
+        <img src="岱崮印象/lvyou2.png" alt="旅游2" class="gallery-img">
+        <h3>地道美食</h3>
+        <p>兔头、羊肉汤、山野菜</p>
+      </div>
+      <div class="card">
+        <img src="岱崮印象/lvyou3.png" alt="旅游3" class="gallery-img">
+        <h3>节庆活动</h3>
+        <p>春季桃花节盛况</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>中国海洋大学 | 沂路农研队 © 2025</p>
+    <p>联系方式：15536979107@163.com</p>
+  </footer>
+</body>
+</html>
